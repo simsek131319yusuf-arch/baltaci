@@ -1,0 +1,344 @@
+{
+ "axe": {
+  "w": 95,
+  "h": 158,
+  "pivot": [
+   48,
+   153
+  ],
+  "notes": "pivot=handle end"
+ },
+ "bg/far": {
+  "w": 1600,
+  "h": 596,
+  "pivot": [
+   0,
+   0
+  ],
+  "notes": "parallax layer (tileable horizontally, ~220px crossfade)"
+ },
+ "bg/ground": {
+  "w": 1600,
+  "h": 238,
+  "pivot": [
+   0,
+   0
+  ],
+  "notes": "parallax layer (tileable horizontally, ~220px crossfade)"
+ },
+ "bg/mid": {
+  "w": 1600,
+  "h": 669,
+  "pivot": [
+   0,
+   0
+  ],
+  "notes": "parallax layer (tileable horizontally, ~220px crossfade)"
+ },
+ "bg/sky": {
+  "w": 1600,
+  "h": 900,
+  "pivot": [
+   0,
+   0
+  ],
+  "notes": "parallax layer"
+ },
+ "cat/idle": {
+  "w": 245,
+  "h": 270,
+  "pivot": [
+   122,
+   265
+  ],
+  "notes": "Pipsy; pivot=feet center; idle/swing share canvas"
+ },
+ "cat/swing": {
+  "w": 245,
+  "h": 270,
+  "pivot": [
+   122,
+   265
+  ],
+  "notes": "Pipsy; pivot=feet center; idle/swing share canvas"
+ },
+ "fx/chip": {
+  "w": 51,
+  "h": 56,
+  "pivot": [
+   25,
+   56
+  ],
+  "notes": "particle"
+ },
+ "fx/leaf": {
+  "w": 43,
+  "h": 48,
+  "pivot": [
+   21,
+   48
+  ],
+  "notes": "particle"
+ },
+ "fx/log": {
+  "w": 104,
+  "h": 92,
+  "pivot": [
+   52,
+   92
+  ],
+  "notes": "particle"
+ },
+ "trees/cam_0": {
+  "w": 223,
+  "h": 428,
+  "pivot": [
+   112,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/cam_1": {
+  "w": 223,
+  "h": 428,
+  "pivot": [
+   112,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/cam_2": {
+  "w": 223,
+  "h": 428,
+  "pivot": [
+   112,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/cam_3": {
+  "w": 223,
+  "h": 428,
+  "pivot": [
+   112,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/cam_stump": {
+  "w": 105,
+  "h": 97,
+  "pivot": [
+   52,
+   91
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/kavak_0": {
+  "w": 124,
+  "h": 428,
+  "pivot": [
+   62,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/kavak_1": {
+  "w": 124,
+  "h": 428,
+  "pivot": [
+   62,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/kavak_2": {
+  "w": 124,
+  "h": 428,
+  "pivot": [
+   62,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/kavak_3": {
+  "w": 124,
+  "h": 428,
+  "pivot": [
+   62,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/kavak_stump": {
+  "w": 72,
+  "h": 96,
+  "pivot": [
+   36,
+   90
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/ladin_0": {
+  "w": 259,
+  "h": 428,
+  "pivot": [
+   130,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/ladin_1": {
+  "w": 259,
+  "h": 428,
+  "pivot": [
+   130,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/ladin_2": {
+  "w": 259,
+  "h": 428,
+  "pivot": [
+   130,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/ladin_3": {
+  "w": 259,
+  "h": 428,
+  "pivot": [
+   130,
+   423
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "trees/ladin_stump": {
+  "w": 81,
+  "h": 104,
+  "pivot": [
+   40,
+   99
+  ],
+  "notes": "pivot=root bottom-center; _1.._3 progressive axe notch derived from _0"
+ },
+ "ui/chain": {
+  "w": 128,
+  "h": 128,
+  "pivot": [
+   64,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/clock": {
+  "w": 128,
+  "h": 128,
+  "pivot": [
+   64,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/coin": {
+  "w": 128,
+  "h": 128,
+  "pivot": [
+   64,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/log": {
+  "w": 128,
+  "h": 128,
+  "pivot": [
+   64,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/panel": {
+  "w": 256,
+  "h": 148,
+  "pivot": [
+   128,
+   148
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/pipsy_cry": {
+  "w": 120,
+  "h": 128,
+  "pivot": [
+   60,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/pipsy_happy": {
+  "w": 124,
+  "h": 128,
+  "pivot": [
+   62,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "ui/pipsy_wow": {
+  "w": 123,
+  "h": 128,
+  "pivot": [
+   61,
+   128
+  ],
+  "notes": "icon/panel"
+ },
+ "story/hoca": {
+  "w": 332,
+  "h": 360,
+  "pivot": [
+   166,
+   360
+  ],
+  "notes": "bust portrait, pivot=bottom center"
+ },
+ "story/kemal": {
+  "w": 281,
+  "h": 360,
+  "pivot": [
+   140,
+   360
+  ],
+  "notes": "bust portrait, faces left"
+ },
+ "story/letter": {
+  "w": 313,
+  "h": 420,
+  "pivot": [
+   156,
+   210
+  ],
+  "notes": "parchment, no readable text"
+ },
+ "story/pawprint": {
+  "w": 200,
+  "h": 200,
+  "pivot": [
+   100,
+   100
+  ],
+  "notes": "bark patch, pivot=center"
+ },
+ "story/map_piece": {
+  "w": 391,
+  "h": 300,
+  "pivot": [
+   195,
+   150
+  ],
+  "notes": "torn map fragment"
+ }
+}

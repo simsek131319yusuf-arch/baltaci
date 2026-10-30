@@ -1,0 +1,19 @@
+# Godot cache / editor state
+.godot/
+*.tmp
+
+# Raw AI generations are large and reproducible from art/prompts/promptlar.md.
+# Keep only the character references.
+art/raw/*
+!art/raw/pipsy_ref.png
+!art/raw/pipsy_emotes_ref.png
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python cache / tool logs
+__pycache__/
+*.pyc
+art/tools/*.log

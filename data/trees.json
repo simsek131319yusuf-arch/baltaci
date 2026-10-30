@@ -1,0 +1,13 @@
+{
+  "order": ["kavak", "cam", "ladin"],
+  "trees": {
+    "kavak": { "name": "Kavak", "hp": 20, "height": 260, "width": 34, "log_value": 2,  "logs": 1, "xp": 1, "color_trunk": "#8a6a4a", "color_crown": "#9cbf4f" },
+    "cam":   { "name": "Çam",   "hp": 45, "height": 320, "width": 40, "log_value": 9,  "logs": 1, "xp": 2, "color_trunk": "#6e4d33", "color_crown": "#3f7a4a" },
+    "ladin": { "name": "Ladin", "hp": 90, "height": 420, "width": 46, "log_value": 35, "logs": 1, "xp": 4, "color_trunk": "#5a3d2a", "color_crown": "#2d5e44" }
+  },
+  "spawn": [
+    { "tree": "kavak", "from_col": 0,  "weights": [[0, 100], [30, 40], [60, 15], [100, 3]] },
+    { "tree": "cam",   "from_col": 6,  "weights": [[6, 5], [30, 45], [60, 45], [100, 25]] },
+    { "tree": "ladin", "from_col": 22, "weights": [[22, 2], [40, 20], [60, 40], [100, 72]] }
+  ]
+}

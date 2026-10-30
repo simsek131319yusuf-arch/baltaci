@@ -1,0 +1,47 @@
+{
+  "save_version": 1,
+  "chain_bonus_max": 1.0,
+  "forest": {
+    "buffer_columns": 14,
+    "spacing_min": 70,
+    "spacing_max": 115,
+    "ground_y": 760
+  },
+  "base_stats": {
+    "axe_damage": 5,
+    "swing_interval": 0.7,
+    "swing_interval_min": 0.18,
+    "crit_chance": 0,
+    "crit_multiplier": 2,
+    "run_time": 20,
+    "fall_power": 0.05,
+    "chain_bonus_per_link": 0.05
+  },
+  "notes": {
+    "fall_power": "devrilme hasarı = devrilen ağacın height(px) × fall_power. Kavak 260×0.05 = 13; kavak 20 can, yani tek devrilme kavağı öldürmez AMA hasar birikir: bir ağaç menzildeki 2-3 ağaca birden hasar verir ve onlar da düşünce komşularına tekrar vurur, zayıflamış ağaçlar sonraki inişte ölür. Bu yüzden taban değerlerde bile zincir başlayabilir (mükemmel nişanlı botta ortalama ~12 ağaç). Fall_power yükseldikçe tek inişte ölen ağaç sayısı artar ve zincir kontrolsüz uzar.",
+    "chain_bonus_per_link": "tur sonu bonus = satış × min((en_uzun_zincir − 1) × chain_bonus_per_link, chain_bonus_max). Tek ağaç zincir sayılmaz. Zincir uzunluğu = yere değip tomruğu sayılan ağaç sayısı (havada kalan sayılmaz).",
+    "chain_bonus_max": "toplam zincir bonusunun üst sınırı (satışın oranı). 1.0 = en fazla +%100.",
+    "forest": "orman SONSUZ: sütun indeksi sağa gittikçe artar, kamera önünde buffer_columns sütun hazır tutulur, çok gerideki ağaçlar/kütükler silinir. Tür karışımı trees.json 'spawn' ağırlıklarından (60. sütundan sonra son ağırlık sabit kalır, ladin baskın).",
+    "juice": "Animasyon/his ayarları (scenes/ui/juice.gd okur). hitstop_*: darbe anında yerel zaman yavaşlatma süresi (ms), hitstop_scale: o sırada simülasyon hızı çarpanı. trauma_*: ekran sarsıntısı (0..1, kare=trauma², yumuşak gürültü); shake_max_px tepe kayma. cursor_follow: balta imlecinin fareyi üstel takip hızı (1/sn). chain_happy/chain_wow: Pipsy emoji eşikleri. good_vs_avg/good_vs_best/poor_vs_avg: sonuç ekranında Pipsy tepkisi, oyuncunun önceki vardiya toplamlarına göre (iyi: toplam >= 1.15 x ortalama ya da >= 0.8 x en iyi; kötü: < 0.6 x ortalama; ilk vardiya hep iyi). avg_alpha: ortalamanın (EMA) güncelleme hızı."
+  },
+  "juice": {
+    "hitstop_ms": 45,
+    "hitstop_crit_ms": 65,
+    "hitstop_kill_ms": 60,
+    "hitstop_scale": 0.04,
+    "shake_max_px": 16,
+    "trauma_decay": 1.5,
+    "trauma_crit": 0.14,
+    "trauma_land": 0.2,
+    "trauma_per_link": 0.09,
+    "cursor_follow": 24,
+    "cursor_follow_strike": 70,
+    "chain_happy": 3,
+    "chain_wow": 8,
+    "good_vs_avg": 1.15,
+    "good_vs_best": 0.8,
+    "poor_vs_avg": 0.6,
+    "avg_alpha": 0.35,
+    "gold_count_rate": 9
+  }
+}

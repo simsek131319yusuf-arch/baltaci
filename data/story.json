@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "characters": {
+    "pipsy": { "name": "Pipsy", "portrait": "cat/idle", "portrait_crop": [0.15, 0.0, 0.7, 0.63], "color": "#e8a82e", "silent": true },
+    "hoca":  { "name": "Hoca", "portrait": "story/hoca", "color": "#7a63a8" },
+    "kemal": { "name": "Kunduz Kemal", "portrait": "story/kemal", "color": "#a8602f" },
+    "bodo":  { "name": "Dede Bodo", "portrait": "story/pawprint", "color": "#6b4a2e" }
+  },
+  "beats": [
+    {
+      "id": "intro",
+      "trigger": { "event": "camp_enter", "conditions": [] },
+      "once": true,
+      "letter": {
+        "from": "Dede Bodo",
+        "text": "Sevgili torunum Pipsy,\n\nBu mektubu okuyorsan baltamı kaldıracak kadar büyümüşsün demektir. Kampı biraz tozlu, biraz dağınık bulacaksın ama kalbi yerinde.\n\nOrmanın tam ortasında Altın Meşe diye bir ağaç var. Onu bul. Gerisini yolda öğrenirsin.\n\nBaltanı keskin, kalbini sıcak tut.\n\nSeni çok seven deden, Bodo"
+      },
+      "lines": [
+        { "who": "hoca", "text": "Huu-huu! Kapıyı çalmanı beklerdim ama neyse. Hoş geldin, küçük Bodo!" },
+        { "who": "pipsy", "text": "(Pipsy kuyruğunu o kadar hızlı sallıyor ki kamptan toz kalkıyor.)", "emote": "wow" },
+        { "who": "hoca", "text": "Ben Bilge Baykuş. Herkes bana Hoca der; bir tek Kemal 'şu gece kuşu' der." },
+        { "who": "hoca", "text": "Dedeni iyi tanırdım. Ağaç kesmeyi sanata çevirmişti, ben de ona yıllarca bağırarak yardım ettim." },
+        { "who": "hoca", "text": "Hadi ilk vardiyaya! İmleci ağaca götür, balta kendiliğinden sallanır. Sen sadece nereye vuracağını seç.", "emote": "happy" }
+      ]
+    },
+    {
+      "id": "first_shift",
+      "trigger": { "event": "camp_enter", "conditions": [{ "runs_gte": 1 }] },
+      "once": true,
+      "lines": [
+        { "who": "hoca", "text": "İlk vardiya tamam! Baltan hâlâ sapasağlam, bu iyi haber." },
+        { "who": "hoca", "text": "Şu tezgahı görüyor musun? Dede ilk baltasını orada bilemişti. Altınla baltanı güçlendir." },
+        { "who": "hoca", "text": "Her geliştirme bir sonraki vardiyayı kolaylaştırır. Ormanda acele eden kaybeder, bileyen kazanır." },
+        { "who": "pipsy", "text": "(Pipsy tezgaha koşup baltayı kokluyor. Şimdilik zararı yok.)", "emote": "happy" }
+      ]
+    },
+    {
+      "id": "chain5",
+      "trigger": { "event": "chain", "conditions": [{ "chain_gte": 5 }] },
+      "once": true,
+      "toast": { "who": "hoca", "text": "Bir ağaç ötekini itti! Bodo buna 'orman dansı' derdi." },
+      "lines": [
+        { "who": "hoca", "text": "Gördün mü? Devrilen ağaç komşusunu itti, o da bir sonrakini. Bodo buna 'orman dansı' derdi." },
+        { "who": "pipsy", "text": "(Pipsy ağzı açık, hâlâ devrilen son ağaca bakıyor.)", "emote": "wow" },
+        { "who": "hoca", "text": "İpucu: yan yana duran ağaçlara vur, hep aynı yöne düşsünler. Zincir uzadıkça kesen de şişer." }
+      ]
+    },
+    {
+      "id": "depth30",
+      "trigger": { "event": "depth", "conditions": [{ "col_gte": 30 }] },
+      "once": true,
+      "toast": { "who": "pipsy", "text": "(Pipsy bir gövdede tanıdık bir iz görüyor...)", "emote": "wow" },
+      "lines": [
+        { "who": "pipsy", "text": "(Pipsy durdu. Gövdede derin kazınmış bir pati izi var, tam kendi patisi boyunda.)", "emote": "wow" },
+        { "who": "hoca", "text": "Bu... Bodo'nun işareti. Derin ormana her girişinde bir ağaca bırakırdı." },
+        { "who": "pipsy", "text": "(Pipsy patisini izin üstüne koyuyor. Gözleri doldu ama kuyruğu yavaşça sallanıyor.)", "emote": "cry" },
+        { "who": "hoca", "text": "Doğru yoldasın demek bu. Ağlama... huu... gözüme bir şey kaçtı, ben de ağlıyorum." }
+      ]
+    },
+    {
+      "id": "ladin",
+      "trigger": { "event": "tree_first_seen", "conditions": [{ "tree": "ladin" }] },
+      "once": true,
+      "toast": { "who": "hoca", "text": "Ladin! Dedenin en sevdiği ağaç. Anlatacaklarım var..." },
+      "lines": [
+        { "who": "hoca", "text": "Ladin bu! Boyu uzun, huyu sert ama kesene karşılığını fazlasıyla öder." },
+        { "who": "hoca", "text": "Ladinleri görüyorsan ormanın derinine iniyorsun demektir. Orada eski bir efsane yaşar: Altın Meşe." },
+        { "who": "hoca", "text": "Derler ki yaprakları sabah ışığında gerçek altın gibi parlar. Dede onu hep aradı, hiç kesmedi." },
+        { "who": "hoca", "text": "Neden mi? Çünkü bazı ağaçlar kesilmek için değil, bulunmak için vardır." },
+        { "who": "pipsy", "text": "(Pipsy başını yana yatırıp gözlerini kocaman açıyor. Altın Meşe, not alındı.)", "emote": "happy" }
+      ]
+    },
+    {
+      "id": "kemal_challenge",
+      "trigger": { "event": "camp_enter", "conditions": [{ "runs_gte": 5 }, { "flag_not": "kemal_challenge" }] },
+      "once": true,
+      "reward": { "flag": "kemal_challenge" },
+      "lines": [
+        { "who": "kemal", "text": "Heey! Bu orman benim, bu kamp da benim! Hoca, bu küçük tüylü de kim?" },
+        { "who": "hoca", "text": "Bodo'nun torunu Pipsy. Ve tüylü değil, sarı. Nazik ol Kemal." },
+        { "who": "kemal", "text": "Bodo mu? Efsane dediğin sadece iyi bir abartıdır! Benim en uzun zincirim x12, bakalım sen ne yapacaksın." },
+        { "who": "kemal", "text": "Tek vardiyada x15 zincir kur, bandanamı yerim. Kuramazsan her sabah bana 'Usta Kemal' diyeceksin!" },
+        { "who": "pipsy", "text": "(Pipsy baltasını omzuna atıp sessizce gülümsüyor. Anlaşma tamam.)", "emote": "happy" }
+      ]
+    },
+    {
+      "id": "kemal_defeat",
+      "trigger": { "event": "chain", "conditions": [{ "chain_gte": 15 }, { "flag": "kemal_challenge" }] },
+      "once": true,
+      "toast": { "who": "kemal", "text": "x15?! Bu... bu olamaz! Hoca, sen de gördün mü?" },
+      "reward": { "gold": 400, "flag": "map_piece" },
+      "lines": [
+        { "who": "kemal", "text": "x15... Gözlerim mi yanıldı? Hoca, söyle, yanıldım mı?" },
+        { "who": "hoca", "text": "Hayır Kemal. Ben de saydım. İki kere." },
+        { "who": "kemal", "text": "Pekâlâ, pekâlâ! Kabul. Sen benden iyi oduncusun. Bu orman... ikimizin." },
+        { "who": "kemal", "text": "Al şunu. Bodo'nun eski haritasından bir parça, yıllardır yastığımın altında. Bir de bahis ödülü: 400 altın." },
+        { "who": "pipsy", "text": "(Pipsy haritayı patisine alıp Kemal'e sarılıyor. Kemal 'tamam, yeter' diyor ama ayrılmıyor.)", "emote": "happy" },
+        { "who": "kemal", "text": "Bandanayı yemiyorum ama, o şart sayılmaz. Hoca, gülme!" }
+      ]
+    },
+    {
+      "id": "depth100",
+      "trigger": { "event": "depth", "conditions": [{ "col_gte": 100 }, { "flag": "map_piece" }] },
+      "once": true,
+      "toast": { "who": "pipsy", "text": "(Harita parçası cebinde titriyor. Önde bir tabela var!)", "emote": "wow" },
+      "lines": [
+        { "who": "pipsy", "text": "(Harita parçası titriyor. Pipsy'nin önünde yosun tutmuş eski bir tabela duruyor.)", "emote": "wow" },
+        { "who": "hoca", "text": "Haritadaki işaret tam burası! Tabelada ne yazıyor, oku bakalım." },
+        { "who": "hoca", "text": "'Altın Meşe'ye: Gölgeli Patika.' Altında küçük harflerle: 'Bodo buradaydı. Ekmek bırakmayın, sincaplar yiyor.'" },
+        { "who": "hoca", "text": "Patika ormanın daha derinine iniyor. Yeni ağaçlar, yeni belalar... ama önce bir nefes al." },
+        { "who": "pipsy", "text": "(Pipsy tabelanın yanındaki patikaya bakıyor. Kuyruğu bir kere sallanıyor: hazır.)", "emote": "happy" },
+        { "who": "hoca", "text": "Devam edecek... Hazır ol, küçük oduncu." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "upgrades": [
+    { "id": "axe_damage",     "name": "Keskin Balta",    "stat": "axe_damage",     "op": "add", "value": 3,     "base_cost": 10,  "growth": 1.36, "max_level": 25 },
+    { "id": "swing_interval", "name": "Çevik Pençe",     "stat": "swing_interval", "op": "add", "value": -0.04, "base_cost": 15,  "growth": 1.5,  "max_level": 12 },
+    { "id": "run_time",       "name": "Uzun Vardiya",    "stat": "run_time",       "op": "add", "value": 3,     "base_cost": 40,  "growth": 1.5, "max_level": 15 },
+    { "id": "fall_power",     "name": "Ağır Devrilme",   "stat": "fall_power",     "op": "add", "value": 0.012, "base_cost": 140,  "growth": 1.6,  "max_level": 15 },
+    { "id": "crit_chance",    "name": "Şanslı Vuruş",    "stat": "crit_chance",    "op": "add", "value": 0.04,  "base_cost": 220,  "growth": 1.6,  "max_level": 10 }
+  ],
+  "notes": "Maliyetler sonsuz orman + mükemmel nişan botuyla ayarlı (tools/sim_balance.gd): hepsini maksimuma çıkarmak mükemmel botla ~30-32 vardiya (insan daha yavaş). cost(level) = round(base_cost × growth^level), level = şu anki seviye (0'dan). Stat değeri = base_stats + level × value. swing_interval swing_interval_min'in altına inmez, crit_chance 0..1."
+}
